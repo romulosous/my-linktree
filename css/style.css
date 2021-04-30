@@ -1,0 +1,177 @@
+/* Reset */
+
+/* Cores */
+:root {
+  --primary-color: #03FFF0;
+  --bg-color: #202833;
+  --primary-text: #80858B;
+  --black: #080101;
+  --secundary-text: #FFF;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background: var(--black);
+  font-size: 20px;
+}
+
+canvas {
+  display: block;
+}
+
+#particles-container{
+  z-index: -1;
+  position: fixed; 
+  width: 100%; 
+  height: 100%;
+  top: 0;
+
+}
+
+
+
+
+.container {
+  width: 500px;
+  height: calc(100vh - 20px);
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+}
+
+.profile {
+  border-radius: 50%;
+  padding: 6px;
+  border: 4px solid var(--primary-color);
+  width: 200px;
+}
+
+.name {
+  font-size: 1.75em;
+  margin: 20px 0 5px 0;
+  color: var(--secundary-text);
+}
+
+.subtitle {
+  font-size: 1.125em;
+  color: var(--primary-color);
+
+}
+
+.description {
+  margin: 20px 10px 5px 10px;
+  color: var(--primary-text);
+
+
+
+}
+
+
+.info-container {
+  width: 500px;
+  /* height: 100vh; */
+  background: var(--bg-color);
+  margin-top: 40px;
+  border-radius: 48px 48px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.redes-sociais {
+  display: flex;
+  width: 200px;
+  justify-content: space-around;
+  align-items: center;
+  background: hsla(0,0%,87.8%,.35);
+  border-radius: 50px;
+  height: 65px;
+  position: absolute;
+  top: -32px;
+  left: calc(50% - 100px);
+}
+
+.redes-sociais li {
+  font-size: 2em;
+
+}
+
+.redes-sociais li a {
+  color: var(--primary-color);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  margin-top: 48px;
+}
+
+.content p {
+  font-size: 1em;
+  margin-bottom: 20px;
+  text-align: left;
+  margin-left: 20px;
+  color: var(--secundary-text)
+}
+
+.info-content {
+  width: 100%;
+  height: 300px;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+}
+
+iframe {
+  border-radius: 10px;
+  width: 100%;
+  height: 85%;
+}
+
+.link {
+  width: 100%;
+  text-decoration: none;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 1.125em;
+}
+
+.link:hover{
+  transition: all 0.1s ease 0s;
+  color: var(--secundary-text);
+  background: #03ffee7a;
+  
+}
+
+
